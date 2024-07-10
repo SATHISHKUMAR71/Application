@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item
+        android:id="@+id/main_item"
+        android:title="@string/app_info">
+        <menu>
+            <item
+                android:id="@+id/inbox_item"
+                android:icon="@drawable/baseline_home_24"
+                android:title="@string/home"
+                app:showAsAction="ifRoom"
+                android:checkable="true"/>
+            <item
+                android:id="@+id/outbox_item"
+                android:icon="@drawable/baseline_add_box_24"
+                android:title="@string/box"
+                app:showAsAction="ifRoom"
+                android:checkable="true"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/main_item2"
+        android:title="@string/app_info">
+        <menu>
+            <item
+                android:id="@+id/inbox_item1"
+                android:icon="@drawable/baseline_home_24"
+                android:title="@string/home"
+                app:showAsAction="ifRoom"
+                android:checkable="true"/>
+            <item
+                android:id="@+id/outbox_item2"
+                android:icon="@drawable/baseline_add_box_24"
+                android:title="@string/box"
+                app:showAsAction="ifRoom"
+                android:checkable="true"/>
+        </menu>
+    </item>
+</menu>
