@@ -25,15 +25,15 @@ class ContactAdapter(private var contactList:List<Contacts>) : RecyclerView.Adap
         holder.itemView.apply {
             this.findViewById<TextView>(R.id.textViewName).text = contactList[position].name
             this.findViewById<TextView>(R.id.textViewPhone).text = contactList[position].id.toString()
-            this.setOnClickListener{
-                val intent = Intent(context,ContactDetailActivity::class.java)
-                intent.putExtra("Name",contactList[position].name)
-                intent.putExtra("ID",contactList[position].id.toString())
-                intent.putExtra("Details","NO DETAILS AVAILABLE...")
-                context.startActivity(intent)
-//                this.transitionName = contactList[position].id.toString()
-                println("OnBind ${holder.itemView.id}")
-            }
+//            this.setOnClickListener{
+//                val intent = Intent(context,ContactDetailActivity::class.java)
+//                intent.putExtra("Name",contactList[position].name)
+//                intent.putExtra("ID",contactList[position].id.toString())
+//                intent.putExtra("Details","NO DETAILS AVAILABLE...")
+//                context.startActivity(intent)
+////                this.transitionName = contactList[position].id.toString()
+//                println("OnBind ${holder.itemView.id}")
+//            }
         }
     }
 }

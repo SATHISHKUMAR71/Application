@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity()
         }
         viewPager = findViewById(R.id.fragmentViewPager)
         viewPagerAdapter = FragmentViewPager(this)
-        viewPagerAdapter.addFragment(HomeFragment())
+        viewPagerAdapter.addFragment(HomeFragment(contactList))
         viewPagerAdapter.addFragment(SecondFragment())
         viewPager.adapter = viewPagerAdapter
         val tabLayoutTitles = arrayOf("Home","Settings")
